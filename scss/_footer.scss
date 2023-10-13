@@ -1,0 +1,174 @@
+footer {
+  background-color: $darkgray;
+  padding: 32px 0px 40px 0px;
+  color: white;
+
+  .container {
+    display: flex;
+    flex-flow: column;
+    row-gap: 24px;
+
+    div:nth-child(1) {
+      .email-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid white;
+        background-color: transparent;
+        padding: 9px 16px;
+        margin: 16px 0px 9px 0px;
+
+        input {
+          background: none;
+          border: none;
+          outline: none;
+        }
+        span {
+          color: white;
+        }
+      }
+      .checkbox-wrap {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        p {
+          font-size: 10px;
+          font-weight: 600;
+        }
+      }
+    }
+    div:nth-child(2) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      row-gap: 24px;
+
+      ul {
+        display: flex;
+        flex-flow: column;
+        row-gap: 10px;
+        width: 152px;
+
+        li a {
+          color: white;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+    div:nth-child(3) {
+      ul {
+        display: flex;
+        column-gap: 16px;
+        margin-bottom: 24px;
+      }
+      .created-by {
+        justify-content: start;
+        column-gap: 10px;
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include media($md) {
+  footer {
+    .container {
+      div:nth-child(1) {
+        .email-wrap {
+          width: 60%;
+        }
+        .checkbox-wrap {
+          justify-content: start;
+        }
+      }
+      div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+@include media($lg) {
+  footer {
+    padding: 42px 0px 33px 0px;
+
+    .container {
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      div:nth-child(1) {
+        width: 38%;
+        .email-wrap {
+          width: 100%;
+        }
+        .checkbox-wrap {
+            margin-top: 0px;
+            flex-flow: row;
+            row-gap: 0px;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      div:nth-child(2) {
+        width: 50%;
+        ul {
+          width: 162px;
+          li a {
+            font-size: 16px;
+          }
+        }
+      }
+      div:nth-child(3) {
+        margin-top: -50px;
+        flex-flow: column;
+        align-items: start;
+        row-gap: 30px;
+        .created-by {
+          width: 100%;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media($xl) {
+  footer {
+    padding: 52px 0px 33px 0px;
+
+    .container {
+      div:nth-child(1) {
+        width: 37%;
+        .email-wrap {
+          margin: 24px 0px 16px 0px;
+        }
+        .checkbox-wrap {
+          margin: 0px;
+        }
+      }
+      div:nth-child(2) {
+        width: 55%;
+        ul {
+          row-gap: 15px;
+          width: 172px;
+
+          li a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

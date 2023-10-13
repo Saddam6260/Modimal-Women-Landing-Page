@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+
+/*** Mixin ***/
+@mixin media($screen-size) {
+  @media only screen and (min-width: $screen-size) {
+    @content;
+  }
+}
+
+/*** Variables ***/
+$darkgray: #404040;
+$sm: 360px;
+$md: 768px;
+$lg: 992px;
+$xl: 1440px;
+
+/*** Global Style ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  background-color: none;
+}
+h1 {
+  font-family: "League Spartan", sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+span {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*** Common Class ***/
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 90%;
+}
+.common-h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+/*** Media Query ***/
+@include media($sm) {
+  .container {
+    max-width: 88%;
+  }
+}
+@include media($md) {
+}
+@include media($lg) {
+  .common-h5 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+@include media($xl) {
+  .container {
+    max-width: 85%;
+  }
+  .common-h5{
+    font-size: 20px;
+  }
+}
+
+@import "./footer";

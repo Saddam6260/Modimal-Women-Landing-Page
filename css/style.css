@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+/*** Mixin ***/
+/*** Variables ***/
+/*** Global Style ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: none;
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*** Common Class ***/
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 90%;
+}
+
+.common-h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+/*** Media Query ***/
+@media only screen and (min-width: 360px) {
+  .container {
+    max-width: 88%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .common-h5 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 85%;
+  }
+  .common-h5 {
+    font-size: 20px;
+  }
+}
+footer {
+  background-color: #404040;
+  padding: 32px 0px 40px 0px;
+  color: white;
+}
+footer .container {
+  display: flex;
+  flex-flow: column;
+  row-gap: 24px;
+}
+footer .container div:nth-child(1) .email-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 9px 16px;
+  margin: 16px 0px 9px 0px;
+}
+footer .container div:nth-child(1) .email-wrap input {
+  background: none;
+  border: none;
+  outline: none;
+}
+footer .container div:nth-child(1) .email-wrap span {
+  color: white;
+}
+footer .container div:nth-child(1) .checkbox-wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+footer .container div:nth-child(1) .checkbox-wrap p {
+  font-size: 10px;
+  font-weight: 600;
+}
+footer .container div:nth-child(2) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: 24px;
+}
+footer .container div:nth-child(2) ul {
+  display: flex;
+  flex-flow: column;
+  row-gap: 10px;
+  width: 152px;
+}
+footer .container div:nth-child(2) ul li a {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+footer .container div:nth-child(3) ul {
+  display: flex;
+  column-gap: 16px;
+  margin-bottom: 24px;
+}
+footer .container div:nth-child(3) .created-by {
+  justify-content: start;
+  column-gap: 10px;
+}
+footer .container div:nth-child(3) .created-by p {
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .container div:nth-child(1) .email-wrap {
+    width: 60%;
+  }
+  footer .container div:nth-child(1) .checkbox-wrap {
+    justify-content: start;
+  }
+  footer .container div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .container div:nth-child(3) ul {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  footer {
+    padding: 42px 0px 33px 0px;
+  }
+  footer .container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  footer .container div:nth-child(1) {
+    width: 38%;
+  }
+  footer .container div:nth-child(1) .email-wrap {
+    width: 100%;
+  }
+  footer .container div:nth-child(1) .checkbox-wrap {
+    margin-top: 0px;
+    flex-flow: row;
+    row-gap: 0px;
+  }
+  footer .container div:nth-child(1) .checkbox-wrap p {
+    font-size: 12px;
+  }
+  footer .container div:nth-child(2) {
+    width: 50%;
+  }
+  footer .container div:nth-child(2) ul {
+    width: 162px;
+  }
+  footer .container div:nth-child(2) ul li a {
+    font-size: 16px;
+  }
+  footer .container div:nth-child(3) {
+    margin-top: -50px;
+    flex-flow: column;
+    align-items: start;
+    row-gap: 30px;
+  }
+  footer .container div:nth-child(3) .created-by {
+    width: 100%;
+  }
+  footer .container div:nth-child(3) .created-by p {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  footer {
+    padding: 52px 0px 33px 0px;
+  }
+  footer .container div:nth-child(1) {
+    width: 37%;
+  }
+  footer .container div:nth-child(1) .email-wrap {
+    margin: 24px 0px 16px 0px;
+  }
+  footer .container div:nth-child(1) .checkbox-wrap {
+    margin: 0px;
+  }
+  footer .container div:nth-child(2) {
+    width: 55%;
+  }
+  footer .container div:nth-child(2) ul {
+    row-gap: 15px;
+    width: 172px;
+  }
+  footer .container div:nth-child(2) ul li a {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
