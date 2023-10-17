@@ -9,8 +9,8 @@
 
 /*** Variables ***/
 $darkgray: #404040;
-$sky-blue: #7DC3EB;
-$thin-green: #748C70;
+$sky-blue: #7dc3eb;
+$thin-green: #748c70;
 $sm: 360px;
 $md: 768px;
 $lg: 992px;
@@ -53,18 +53,18 @@ a {
   width: 100%;
   max-width: 90%;
 }
-.btn{
+.btn {
   font-size: 14px;
   font-weight: 400;
   padding: 16px;
   background-color: white;
 }
-.section-heading{
+.section-heading {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
 }
-.card-heading{
+.card-heading {
   font-size: 14px;
   font-weight: 600px;
 }
@@ -74,7 +74,7 @@ a {
   line-height: 140%;
   text-transform: capitalize;
 }
-.common-pera{
+.common-pera {
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
@@ -87,19 +87,24 @@ a {
   }
 }
 @include media($md) {
-  .section-heading{
+  .section-heading {
     font-size: 24px;
   }
-  .common-pera{
+  .common-pera {
     font-size: 16px;
+  }
+  .love-icon {
+    span {
+      font-size: 20px;
+    }
   }
 }
 @include media($lg) {
-  .section-heading{
+  .section-heading {
     font-size: 28px;
     margin-bottom: 16px;
   }
-  .card-heading{
+  .card-heading {
     font-size: 16px;
     font-weight: 700;
   }
@@ -107,22 +112,27 @@ a {
     font-size: 16px;
     font-weight: 700;
   }
-  .common-pera{
+  .common-pera {
     font-size: 18px;
+  }
+  .love-icon {
+    span {
+      font-size: 24px;
+    }
   }
 }
 @include media($xl) {
-  .section-heading{
+  .section-heading {
     font-size: 32px;
     margin-bottom: 24px;
   }
   .container {
     max-width: 85%;
   }
-  .common-h5{
+  .common-h5 {
     font-size: 20px;
   }
-  .common-pera{
+  .common-pera {
     font-size: 20px;
   }
 }
