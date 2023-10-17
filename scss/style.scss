@@ -9,6 +9,8 @@
 
 /*** Variables ***/
 $darkgray: #404040;
+$sky-blue: #7DC3EB;
+$thin-green: #748C70;
 $sm: 360px;
 $md: 768px;
 $lg: 992px;
@@ -62,6 +64,10 @@ a {
   font-weight: 700;
   margin-bottom: 8px;
 }
+.card-heading{
+  font-size: 14px;
+  font-weight: 600px;
+}
 .common-h5 {
   font-size: 14px;
   font-weight: 600;
@@ -93,6 +99,10 @@ a {
     font-size: 28px;
     margin-bottom: 16px;
   }
+  .card-heading{
+    font-size: 16px;
+    font-weight: 700;
+  }
   .common-h5 {
     font-size: 16px;
     font-weight: 700;
@@ -117,6 +127,7 @@ a {
   }
 }
 
+@import "./_best-seller";
 @import "./modiweek";
 @import "./sustainability";
 @import "./about-us";

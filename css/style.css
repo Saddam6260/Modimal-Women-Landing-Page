@@ -57,6 +57,11 @@ a {
   margin-bottom: 8px;
 }
 
+.card-heading {
+  font-size: 14px;
+  font-weight: 600px;
+}
+
 .common-h5 {
   font-size: 14px;
   font-weight: 600;
@@ -89,6 +94,10 @@ a {
     font-size: 28px;
     margin-bottom: 16px;
   }
+  .card-heading {
+    font-size: 16px;
+    font-weight: 700;
+  }
   .common-h5 {
     font-size: 16px;
     font-weight: 700;
@@ -110,6 +119,91 @@ a {
   }
   .common-pera {
     font-size: 20px;
+  }
+}
+#best-seller {
+  padding: 20px 0px;
+}
+#best-seller .container .best-seller-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+}
+#best-seller .container .best-seller-wrapper .item .item-img {
+  position: relative;
+}
+#best-seller .container .best-seller-wrapper .item .item-img img {
+  width: 100%;
+}
+#best-seller .container .best-seller-wrapper .item .item-img .love-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#best-seller .container .best-seller-wrapper .item .item-body {
+  padding: 0px 12px 8px 0px;
+}
+#best-seller .container .best-seller-wrapper .item .item-body .item-details p {
+  margin-top: 8px;
+}
+#best-seller .container .best-seller-wrapper .item .item-body .item-details .price {
+  text-align: end;
+  margin-top: 3px;
+}
+#best-seller .container .best-seller-wrapper .item .item-body .item-colors {
+  margin-top: 18px;
+  display: flex;
+  column-gap: 8px;
+}
+#best-seller .container .best-seller-wrapper .item .item-body .item-colors div {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: black;
+}
+#best-seller .container .best-seller-wrapper .item .item-body .item-colors div:nth-child(2) {
+  background-color: #7DC3EB;
+}
+#best-seller .container .best-seller-wrapper .item .item-body .item-colors div:nth-child(3) {
+  background-color: #748C70;
+}
+#best-seller .container .best-seller-wrapper .item:nth-child(3) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #best-seller {
+    padding: 40px 0px;
+  }
+  #best-seller .container .best-seller-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #best-seller .container .best-seller-wrapper .item .item-img {
+    width: 100%;
+    height: 74%;
+  }
+  #best-seller .container .best-seller-wrapper .item .item-img img {
+    height: 100%;
+  }
+  #best-seller .container .best-seller-wrapper .item .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  #best-seller .container .best-seller-wrapper .item:nth-child(3) {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #best-seller {
+    padding: 60px 0px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #best-seller {
+    padding: 88px 0px 99px 0px;
   }
 }
 #modiweek {
