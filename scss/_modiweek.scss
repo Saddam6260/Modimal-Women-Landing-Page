@@ -1,0 +1,82 @@
+#modiweek {
+  padding: 24px 0px;
+  .container {
+    .modiweek-cardset {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      column-gap: 16px;
+
+      .card {
+        padding-bottom: 33px;
+        .img-wrap {
+          position: relative;
+          img {
+            width: 100%;
+          }
+          .love-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+        }
+      }
+      .card:nth-child(3) {
+        display: none;
+      }
+      .card:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media($md) {
+  #modiweek {
+    padding: 32px 0px;
+    .container {
+      .modiweek-cardset {
+        grid-template-columns: repeat(3, 1fr);
+        .card:nth-child(3) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include media($lg) {
+  #modiweek {
+    padding: 45px 0px;
+    .container {
+      .modiweek-cardset {
+        grid-template-columns: repeat(4, 1fr);
+        .card {
+          padding-bottom: none;
+
+          h3 {
+            margin-top: 20px;
+            margin-bottom: 7px;
+          }
+        }
+        .card:nth-child(4) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include media($xl) {
+  #modiweek {
+    padding: 88px 0px;
+    .container {
+      .modiweek-cardset {
+        .card {
+          h3 {
+            margin-top: 38px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+}

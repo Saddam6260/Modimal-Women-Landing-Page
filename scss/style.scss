@@ -60,6 +60,7 @@ a {
 .section-heading{
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 .common-h5 {
   font-size: 14px;
@@ -90,6 +91,7 @@ a {
 @include media($lg) {
   .section-heading{
     font-size: 28px;
+    margin-bottom: 16px;
   }
   .common-h5 {
     font-size: 16px;
@@ -102,6 +104,7 @@ a {
 @include media($xl) {
   .section-heading{
     font-size: 32px;
+    margin-bottom: 24px;
   }
   .container {
     max-width: 85%;
@@ -114,6 +117,7 @@ a {
   }
 }
 
+@import "./modiweek";
 @import "./sustainability";
 @import "./about-us";
 @import "./footer";
