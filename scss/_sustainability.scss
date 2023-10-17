@@ -1,0 +1,56 @@
+#sustainability {
+  background-image: url(../images/Sustainability-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 280px 0px 16px 0px;
+  .container {
+    .content {
+      .btn-wrap {
+        margin-top: 32px;
+        text-align: end;
+
+        .btn {
+          padding: 16px 32px;
+        }
+      }
+    }
+  }
+}
+
+@include media($md) {
+  #sustainability {
+    .container {
+      display: flex;
+      justify-content: end;
+      .content {
+        max-width: 350px;
+        .btn-wrap {
+          margin-top: 32px;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@include media($lg) {
+  #sustainability {
+    padding: 400px 0px 32px 0px;
+    .container {
+      .content {
+        max-width: 420px;
+      }
+    }
+  }
+}
+@include media($xl) {
+  #sustainability {
+    padding: 443px 0px 42px 0px;
+    .container {
+      .content {
+        max-width: 495px;
+      }
+    }
+  }
+}

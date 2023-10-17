@@ -44,6 +44,13 @@ a {
   max-width: 90%;
 }
 
+.btn {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px;
+  background-color: white;
+}
+
 .section-heading {
   font-size: 20px;
   font-weight: 700;
@@ -56,6 +63,12 @@ a {
   text-transform: capitalize;
 }
 
+.common-pera {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 /*** Media Query ***/
 @media only screen and (min-width: 360px) {
   .container {
@@ -66,6 +79,9 @@ a {
   .section-heading {
     font-size: 24px;
   }
+  .common-pera {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .section-heading {
@@ -74,6 +90,9 @@ a {
   .common-h5 {
     font-size: 16px;
     font-weight: 700;
+  }
+  .common-pera {
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -85,6 +104,53 @@ a {
   }
   .common-h5 {
     font-size: 20px;
+  }
+  .common-pera {
+    font-size: 20px;
+  }
+}
+#sustainability {
+  background-image: url(../images/Sustainability-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 280px 0px 16px 0px;
+}
+#sustainability .container .content .btn-wrap {
+  margin-top: 32px;
+  text-align: end;
+}
+#sustainability .container .content .btn-wrap .btn {
+  padding: 16px 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  #sustainability .container {
+    display: flex;
+    justify-content: end;
+  }
+  #sustainability .container .content {
+    max-width: 350px;
+  }
+  #sustainability .container .content .btn-wrap {
+    margin-top: 32px;
+    text-align: end;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #sustainability {
+    padding: 400px 0px 32px 0px;
+  }
+  #sustainability .container .content {
+    max-width: 420px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #sustainability {
+    padding: 443px 0px 42px 0px;
+  }
+  #sustainability .container .content {
+    max-width: 495px;
   }
 }
 #follow-us {
@@ -124,7 +190,7 @@ a {
     display: block;
   }
 }
-@media only screen and (min-width: xl) {
+@media only screen and (min-width: 1440px) {
   #follow-us {
     padding: 88px 0px 48px 0px;
   }

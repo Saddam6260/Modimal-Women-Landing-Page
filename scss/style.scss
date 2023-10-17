@@ -51,6 +51,12 @@ a {
   width: 100%;
   max-width: 90%;
 }
+.btn{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px;
+  background-color: white;
+}
 .section-heading{
   font-size: 20px;
   font-weight: 700;
@@ -60,6 +66,11 @@ a {
   font-weight: 600;
   line-height: 140%;
   text-transform: capitalize;
+}
+.common-pera{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 /*** Media Query ***/
@@ -72,6 +83,9 @@ a {
   .section-heading{
     font-size: 24px;
   }
+  .common-pera{
+    font-size: 16px;
+  }
 }
 @include media($lg) {
   .section-heading{
@@ -80,6 +94,9 @@ a {
   .common-h5 {
     font-size: 16px;
     font-weight: 700;
+  }
+  .common-pera{
+    font-size: 18px;
   }
 }
 @include media($xl) {
@@ -92,7 +109,11 @@ a {
   .common-h5{
     font-size: 20px;
   }
+  .common-pera{
+    font-size: 20px;
+  }
 }
 
+@import "./sustainability";
 @import "./about-us";
 @import "./footer";

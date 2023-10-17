@@ -40,7 +40,7 @@
   }
 }
 
-@include media(xl) {
+@include media($xl) {
   #follow-us {
     padding: 88px 0px 48px 0px;
     .container {
