@@ -1,0 +1,108 @@
+#collection {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 16px;
+
+    .col {
+      .item {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .col-2 {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+@include media($md) {
+  #collection {
+    .container {
+      .col {
+        .item {
+          position: relative;
+
+          .btn {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            padding: 10px 32px;
+          }
+        }
+      }
+      .col-1 {
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 35px;
+      }
+      .col-2 {
+        .item:nth-child(1) {
+          .btn {
+            left: 12px;
+            bottom: 12px;
+            right: initial;
+          }
+        }
+      }
+    }
+  }
+}
+@include media($lg) {
+  #collection {
+    .container {
+      column-gap: 20px;
+      .col {
+        .item {
+          .btn {
+            bottom: 14px;
+            right: 14px;
+            padding: 12px 36px;
+          }
+        }
+      }
+      .col-1 {
+        row-gap: 45px;
+      }
+      .col-2 {
+        .item:nth-child(1) {
+          .btn {
+            left: 14px;
+            bottom: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@include media($xl) {
+  #collection {
+    .container {
+      column-gap: 24px;
+      .col {
+        .item {
+          .btn {
+            bottom: 16px;
+            right: 16px;
+            padding: 16px 48px;
+          }
+        }
+      }
+      .col-1 {
+        row-gap: 64px;
+      }
+      .col-2 {
+        .item:nth-child(1) {
+          .btn {
+            left: 16px;
+            bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
