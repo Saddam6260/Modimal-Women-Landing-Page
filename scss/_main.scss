@@ -1,0 +1,57 @@
+#main {
+  background-image: url(../images/main-bg-sm.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 396px 0px 16px 0px;
+
+  .container {
+    p {
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 32px;
+      font-style: italic;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 180%;
+    }
+  }
+}
+
+@include media($md) {
+  #main {
+    background-image: url(../images/main-bg.png);
+    .container {
+      p {
+        font-size: 24px;
+      }
+      .btn {
+        padding: 16px 32px;
+      }
+    }
+  }
+}
+@include media($lg) {
+  #main {
+    .container {
+      p {
+        font-size: 28px;
+      }
+      .btn {
+        padding: 16px 48px;
+      }
+    }
+  }
+}
+@include media($xl) {
+  #main {
+    .container {
+      p {
+        font-size: 34px;
+      }
+      .btn {
+        padding: 16px 67px;
+      }
+    }
+  }
+}

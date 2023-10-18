@@ -127,6 +127,50 @@ a {
     font-size: 20px;
   }
 }
+#main {
+  background-image: url(../images/main-bg-sm.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 396px 0px 16px 0px;
+}
+#main .container p {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 32px;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+@media only screen and (min-width: 768px) {
+  #main {
+    background-image: url(../images/main-bg.png);
+  }
+  #main .container p {
+    font-size: 24px;
+  }
+  #main .container .btn {
+    padding: 16px 32px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main .container p {
+    font-size: 28px;
+  }
+  #main .container .btn {
+    padding: 16px 48px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #main .container p {
+    font-size: 34px;
+  }
+  #main .container .btn {
+    padding: 16px 67px;
+  }
+}
 #best-seller {
   padding: 20px 0px;
 }
