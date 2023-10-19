@@ -127,6 +127,112 @@ a {
     font-size: 20px;
   }
 }
+header .header-top {
+  padding: 8px 0px;
+  background-color: #404040;
+}
+header .header-top .container {
+  display: flex;
+  justify-content: center;
+}
+header .header-top .container p {
+  font-size: 10px;
+  color: white;
+}
+header .header-bottom {
+  padding: 10px 0px;
+}
+header .header-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-bottom .container .main-logo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  order: 2;
+}
+header .header-bottom .container .main-logo h1 {
+  font-size: 24px;
+}
+header .header-bottom .container .main-logo p {
+  font-size: 8px;
+}
+header .header-bottom .container .list-item {
+  display: none;
+}
+header .header-bottom .container .show-hide-option {
+  display: flex;
+  column-gap: 8px;
+  order: 1;
+}
+header .header-bottom .container .head-icons {
+  order: 3;
+}
+header .header-bottom .container .head-icons div:first-child {
+  display: none;
+}
+header .header-bottom .container .head-icons div:last-child {
+  display: flex;
+  column-gap: 8px;
+}
+
+@media only screen and (min-width: 992px) {
+  header .header-top .container p {
+    font-size: 12px;
+  }
+  header .header-bottom {
+    padding: 16px 0px;
+  }
+  header .header-bottom .container .main-logo {
+    order: 1;
+  }
+  header .header-bottom .container .main-logo h1 {
+    font-size: 28px;
+  }
+  header .header-bottom .container .main-logo p {
+    font-size: 10px;
+  }
+  header .header-bottom .container .list-item {
+    display: flex;
+    order: 2;
+  }
+  header .header-bottom .container .list-item ul {
+    display: flex;
+    column-gap: 28px;
+  }
+  header .header-bottom .container .list-item ul li {
+    font-size: 14px;
+    color: #748c70;
+  }
+  header .header-bottom .container .show-hide-option {
+    display: none;
+  }
+  header .header-bottom .container .head-icons {
+    display: flex;
+    column-gap: 8px;
+    order: 3;
+  }
+  header .header-bottom .container .head-icons div:first-child {
+    display: flex;
+    column-gap: 8px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header .header-bottom {
+    padding: 18px 0px;
+  }
+  header .header-bottom .container .main-logo h1 {
+    font-size: 32px;
+  }
+  header .header-bottom .container .list-item ul {
+    column-gap: 42px;
+  }
+  header .header-bottom .container .list-item ul li {
+    font-size: 18px;
+  }
+}
 #main {
   background-image: url(../images/main-bg-sm.png);
   background-repeat: no-repeat;

@@ -1,0 +1,129 @@
+header {
+  .header-top {
+    padding: 8px 0px;
+    background-color: $darkgray;
+    .container {
+      display: flex;
+      justify-content: center;
+
+      p {
+        font-size: 10px;
+        color: white;
+      }
+    }
+  }
+  .header-bottom {
+    padding: 10px 0px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .main-logo {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        order: 2;
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 8px;
+        }
+      }
+      .list-item {
+        display: none;
+      }
+      .show-hide-option {
+        display: flex;
+        column-gap: 8px;
+        order: 1;
+      }
+      .head-icons {
+        order: 3;
+        div:first-child {
+          display: none;
+        }
+        div:last-child {
+          display: flex;
+          column-gap: 8px;
+        }
+      }
+    }
+  }
+}
+
+@include media($lg) {
+  header {
+    .header-top {
+      .container {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .header-bottom {
+      padding: 16px 0px;
+      .container {
+        .main-logo {
+          order: 1;
+          h1 {
+            font-size: 28px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+        .list-item {
+          display: flex;
+          order: 2;
+
+          ul {
+            display: flex;
+            column-gap: 28px;
+
+            li {
+              font-size: 14px;
+              color: $thin-green;
+            }
+          }
+        }
+        .show-hide-option {
+          display: none;
+        }
+        .head-icons {
+          display: flex;
+          column-gap: 8px;
+          order: 3;
+          div:first-child {
+            display: flex;
+            column-gap: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media($xl) {
+  header {
+    .header-bottom {
+      padding: 18px 0px;
+      .container {
+        .main-logo {
+          h1 {
+            font-size: 32px;
+          }
+        }
+        .list-item {
+          ul {
+            column-gap: 42px;
+            li {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
